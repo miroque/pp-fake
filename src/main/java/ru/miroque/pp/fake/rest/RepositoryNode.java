@@ -21,11 +21,10 @@ import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import ru.miroque.pp.domains.Person;
+import ru.miroque.pp.fake.entity.Node;
 
-@RepositoryRestResource(collectionResourceRel = "users", path = "users")
-public interface PersonRepository extends CrudRepository<User, Long> {
+//import ru.miroque.pp.domains.Person;
 
-    User findByLogin(String login);
-    Optional<User> findByUuid(String uuid);
+//@RepositoryRestResource(collectionResourceRel = "nodes", path = "node")
+public interface RepositoryNode extends CrudRepository<Node, Long> {
 }
