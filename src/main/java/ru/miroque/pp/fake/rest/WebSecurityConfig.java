@@ -17,7 +17,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.PATCH, "/**")
                 .antMatchers(HttpMethod.DELETE, "/**")
                 .antMatchers(HttpMethod.OPTIONS, "/**")
-                .antMatchers(HttpMethod.TRACE, "/**")
-        ;
+                .antMatchers(HttpMethod.TRACE, "/**") ;
     }
 }
